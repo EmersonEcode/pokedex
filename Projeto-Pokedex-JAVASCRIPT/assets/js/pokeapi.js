@@ -22,7 +22,7 @@ pokeApi.getPokemonDetail= (pokemon) =>{
 
 
 // vai retornar toda a manipulação do fetch
-pokeApi.getPokemons =  (offset = 0 , limit = 5) => {
+pokeApi.getPokemons = (offset = 0 , limit = 5) => {
     const url = `https://pokeapi.co/api/v2/pokemon/?offset=${offset}&limit=${limit}`
 
    return fetch(url)
@@ -43,6 +43,20 @@ pokeApi.getPokemons =  (offset = 0 , limit = 5) => {
                     pokemon.types = types
                     pokemon.type = type
                     pokemon.photo = pokemonDetails.sprites.other.dream_world.front_default
+                    pokemon.height = pokemonDetails.height
+                    pokemon.weight = pokemonDetails.weight
+                    const stats = pokemonDetails.stats.map((stat) => stat.base_stat)
+                    const namestats = pokemonDetails.stats.map((stat) => stat.stat.name)
+                    const [hp,attack,defense] = stats
+                    const [name_stat1,name_stat2,name_stat3] = namestats
+                    pokemon.hp = hp
+                    pokemon.attack = attack
+                    pokemon.defense = defense
+                    pokemon.namestat1 = name_stat1
+                    pokemon.namestat2 = name_stat2
+                    pokemon.namestat3 = name_stat3
+                    console.log(name_stat1)
+
                     return pokemon
                 }).then((pokemonD) => pokemonD)
                 

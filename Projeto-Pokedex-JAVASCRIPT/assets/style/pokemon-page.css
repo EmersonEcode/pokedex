@@ -1,0 +1,208 @@
+
+
+
+.normal { 
+    background-color: #3a2701;}
+.grass { 
+    background-color: #77c850;}
+.fire { 
+    background-color: #af2705;}
+.water { 
+    background-color: #678fee;}
+.electric { 
+    background-color: #f7cf2e;}
+.ice { 
+    background-color: #98d5d7;}
+.ground { 
+    background-color: #dfbf69;}
+.flying { 
+    background-color: #01d2bd;}
+.poison { 
+    background-color: #a040a0;}
+.fighting { 
+    background-color: #9e9703;}
+.psychic { 
+    background-color: #00541a;}
+.dark { 
+    background-color: #090400;}
+.rock { 
+    background-color: #484748;}
+.ghost { 
+    background-color: #ca8fe4;}
+.steel { 
+    background-color: #9796a4;} 
+.dragon { 
+    background-color: #975600;}
+.fairy { 
+    background-color: #f9aec7;}
+.bug{
+   background-color: rgb(181, 0, 0);
+}
+
+.card-pokemon{
+    display: none;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+    line-height: 5rem;
+}
+.close{
+    align-self: flex-start;
+    width: 30px;
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.close:hover{
+    width: 35px;
+    height: 40px;
+    background-color: red;
+    border-radius: 5rem;
+    padding: .3rem;
+}
+.pokemonPage{
+    padding: 0;
+    border-radius: 1rem;
+}
+.cp{
+    align-self: flex-start;
+    font-size: 2rem;
+    align-self: center;
+
+}
+
+.card-nome{
+    font-size: 1.7rem;
+    align-self: center;
+    color: white;
+    
+}
+
+.card-pokemon .photo{
+    max-width: 100%;
+    height: 200px;
+}
+
+.Abilities{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.127);
+    padding: 1rem;
+    border-radius: 60px 60px 0px 0px;
+    line-height: 0.1rem;
+
+}
+
+.pokelist{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: .5rem;
+    justify-content: space-between;
+
+}
+.pokelist li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 2rem;
+}
+
+.abilitie{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 3rem;
+    border: solid black 0.5px;
+    
+}
+.pokelist li span{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.list-1 ,.list-2{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.259);
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .5rem;
+    font-size: 1.5rem;
+    align-items :baseline;
+    color: white;
+    border-radius: 1rem;
+    line-height: 1.6rem;
+    font-size: 15px;
+}
+
+.list-2 {
+    padding: 1.0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.list-1 ol{
+    list-style: none;
+    align-items: center;
+    line-height: 1.4rem;
+    }
+
+    .list-1 .column-status{
+    display: flex;
+    flex-direction: column;
+    width: 0.2rem;
+    }
+
+.state {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.state li{
+    width: 12rem;
+    background-color: rgba(65, 65, 65, 0.605);
+    height: 7px;
+    border-radius: 50px;
+    margin-bottom: 7.5px;
+    margin-top: 7.5px;
+
+    
+}
+.state .barra {
+    height: 7px;
+    border-radius: 50px;
+    
+}
+
+.list-2 li{
+    width: 9.5rem;
+    background-color: rgba(255, 255, 255, 0.272);
+    border-radius: 1.5rem;
+
+}
+
+.power{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 4rem;
+}
